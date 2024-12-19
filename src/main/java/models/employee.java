@@ -8,6 +8,7 @@ public class employee {
 	private int pincode;
 	private long phonenumber;
 	private int gender;
+	private String password;
 	
 	public String getRollnumber() {
 		return rollnumber;
@@ -51,12 +52,18 @@ public class employee {
 	public void setGender(int gender) {
 		this.gender = gender;
 	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	public employee() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 	public employee(String rollnumber, String employeename, String email, String address, int pincode, long phonenumber,
-			int gender) {
+			int gender,String password) {
 		super();
 		this.rollnumber = rollnumber;
 		this.employeename = employeename;
@@ -65,6 +72,9 @@ public class employee {
 		this.pincode = pincode;
 		this.phonenumber = phonenumber;
 		this.gender = gender;
+		this.password = password;
+
 	}
+	
 	
 }
